@@ -1,0 +1,44 @@
+.large-hero {
+  position: relative;
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #ffffff;
+
+    @mixin atSmall {
+      font-size: 3rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.5rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.9rem;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 1.6rem;
+    color: #ffffff;
+  }
+
+  &--mobile {
+    display: none;
+  }
+}
