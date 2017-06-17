@@ -1,13 +1,14 @@
 
 .btn {
   display: inline-block;
-  padding: .75rem 1.875rem;
+  padding: .75rem 2rem;
+  margin-top: 40px;
   background-color: $mainGreen;
   color: #ffffff;
   text-decoration: none;
-	letter-spacing: 2.0px;
-	border-radius: 5px;
-	transition: background-color 0.2s, border 0.2s, color 0.2s;
-	font-weight: 500;
-	vertical-align: middle;
+  letter-spacing: 2.0px;
+  border-radius: 5px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  font-weight: 500;
+  vertical-align: middle;
 }

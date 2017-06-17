@@ -1,2 +1,11 @@
 # personal-website
-Personal website project 
+Personal website project
+================================
+
+## Setup
+
+`
+git clone
+npm install
+gulp watch
+`   

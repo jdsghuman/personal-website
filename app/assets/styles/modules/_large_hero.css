@@ -1,44 +1,90 @@
 .large-hero {
   position: relative;
 
+  &__background {
+    min-height: 100vh;
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+  }
   &__text-content {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-60%);
     left: 0;
     width: 100%;
     text-align: center;
   }
-
   &__title {
-    margin: 0;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 2.2rem;
     color: #ffffff;
+    font-size: 2.8rem;
 
     @mixin atSmall {
-      font-size: 3rem;
+      font-size: 3.2rem;
+      padding: 0 5px 0 5px;
     }
 
     @mixin atMedium {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
+      padding: 0 20px 0 20px;
+
     }
 
     @mixin atLarge {
-      font-size: 4.9rem;
+      font-size: 5.0rem;
     }
   }
-
   &__subtitle {
-    margin-top: 10px;
+    margin-top: -20px;
     margin-bottom: 30px;
     font-weight: 100;
     font-size: 1.6rem;
     color: #ffffff;
+
+    @mixin atMedium {
+      margin-top: -40px;
+      font-size: 1.5rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.7rem;
+    }
+  }
+
+  &--job {
+    display: none;
+
+    @mixin atMedium {
+      display: inline-block;
+    }
   }
 
   &--mobile {
-    display: none;
+    display: inline-block;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.rem;
+    margin-top: -50px;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__subtitle:after {
+    display: block;
+    height: 1px;
+    background-color: #ffffff;
+    content: " ";
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: -15px;
+    margin-top: 10px;
+
+    @mixin atMedium {
+      display: none;
+    }
   }
 }
