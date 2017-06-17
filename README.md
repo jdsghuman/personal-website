@@ -3,8 +3,8 @@ Personal website project
 
 ## Setup
 
-`
-git clone
+`git clone
+
 npm install
-gulp watch
-`   
+
+gulp watch`
