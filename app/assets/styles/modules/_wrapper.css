@@ -1,0 +1,14 @@
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+
+  &--medium {
+    max-width: 975px;
+  }
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
