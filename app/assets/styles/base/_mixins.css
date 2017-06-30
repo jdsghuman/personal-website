@@ -24,7 +24,7 @@
   }
 
   @define-mixin atMinHeight {
-    @media(max-height: 350px) {
+    @media(max-height: 380px) {
       @mixin-content;
     }
   }

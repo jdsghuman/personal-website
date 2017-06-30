@@ -11,14 +11,14 @@
   &__text-content {
     position: absolute;
     top: 45%;
-    padding-top: 80px;
+    padding-top: 40px;
     transform: translateY(-60%);
     left: 0;
     width: 100%;
     text-align: center;
 
-    @mixin atMedium {
-      padding-top: 60px;
+    @mixin atSmall {
+      padding-top: 100px;
     }
   }
   &__title {
@@ -26,7 +26,7 @@
     text-transform: uppercase;
     color: #ffffff;
     font-size: 2.8rem;
-    padding-top: 80px;
+    padding-top: 100px;
 
     @mixin atSmall {
       font-size: 3.2rem;

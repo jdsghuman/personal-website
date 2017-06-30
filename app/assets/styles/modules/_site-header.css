@@ -6,11 +6,14 @@
 
   &__logo {
     position: absolute;
-    padding-bottom: 10px;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) scale(.6);
+    transform: translateX(-50%) scale(.9);
     transform-origin: 50% 0%;
+
+    @mixin atSmall {
+      transform: translateX(-50%) scale(.6);
+    }
 
     @mixin atMedium {
       left: 0;
