@@ -22,4 +22,10 @@
       display: table;
     }
   }
+
+  @define-mixin atMinHeight {
+    @media(max-height: 350px) {
+      @mixin-content;
+    }
+  }
 }

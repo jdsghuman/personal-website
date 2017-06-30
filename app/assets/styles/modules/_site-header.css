@@ -1,8 +1,26 @@
 .site-header {
   position: absolute;
-  padding: 12px 0;
+  padding: 10px 0;
   width: 100%;
   z-index: 50;
+
+  &__logo {
+    position: absolute;
+    padding-bottom: 10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(.6);
+    transform-origin: 50% 0%;
+
+    @mixin atMedium {
+      left: 0;
+      transform: translateX(0) scale(.5);
+    }
+
+    @mixin atMinHeight {
+      display: none;
+    }
+  }
 
   &__menu-content {
     display: none;
@@ -10,5 +28,9 @@
     @mixin atMedium {
       display: block;
     }
+  }
+
+  &__pad {
+    position: relative;
   }
 }
