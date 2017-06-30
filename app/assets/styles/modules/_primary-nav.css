@@ -1,7 +1,5 @@
 .primary-nav {
 
-  padding-bottom: 500px;
-
   &--position-right {
     float: right;
   }
@@ -19,11 +17,20 @@
   }
 
   a {
+    padding: 8px 0;
     color: #ffffff;
     text-decoration: none;
     display: block;
-    font-weight: 300;
-    font-size: 1.4rem;
+    font-weight: 100;
+    font-size: 1.3rem;
     padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+
+  a:hover {
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
   }
 }
