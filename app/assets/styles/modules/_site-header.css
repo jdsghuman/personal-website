@@ -8,8 +8,9 @@
     position: absolute;
     top: 0;
     left: 50%;
+    padding-top: 10px;
     transform: translateX(-50%) scale(.9);
-    transform-origin: 50% 0%;
+    transform-origin: 50% 50%;
 
     @mixin atSmall {
       transform: translateX(-50%) scale(.6);
