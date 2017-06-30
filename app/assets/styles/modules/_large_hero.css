@@ -10,7 +10,7 @@
 
   &__text-content {
     position: absolute;
-    top: 45%;
+    top: 40%;
     padding-top: 40px;
     transform: translateY(-60%);
     left: 0;
@@ -44,7 +44,7 @@
     margin-top: -20px;
     margin-bottom: 30px;
     font-weight: 100;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #ffffff;
 
     @mixin atMedium {
@@ -67,9 +67,9 @@
 
   &--mobile {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 100;
     color: #ffffff;
-    font-size: 1.rem;
+    font-size: 1.5rem;
     margin-top: -50px;
 
     @mixin atMedium {

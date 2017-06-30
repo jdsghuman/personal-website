@@ -482,7 +482,7 @@ img {
 
 .large-hero__text-content {
     position: absolute;
-    top: 45%;
+    top: 40%;
     padding-top: 40px;
     -webkit-transform: translateY(-60%);
             transform: translateY(-60%);
@@ -531,7 +531,7 @@ img {
     margin-top: -20px;
     margin-bottom: 30px;
     font-weight: 100;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #ffffff;
   }
 
@@ -563,9 +563,9 @@ img {
 
 .large-hero--mobile {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 100;
     color: #ffffff;
-    font-size: 1.rem;
+    font-size: 1.5rem;
     margin-top: -50px;
   }
 
