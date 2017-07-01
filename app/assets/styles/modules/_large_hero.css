@@ -43,7 +43,7 @@
   &__subtitle {
     margin-top: -20px;
     margin-bottom: 30px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.5rem;
     color: #ffffff;
 
@@ -67,7 +67,7 @@
 
   &--mobile {
     display: inline-block;
-    font-weight: 100;
+    font-weight: 300;
     color: #ffffff;
     font-size: 1.5rem;
     margin-top: -50px;
