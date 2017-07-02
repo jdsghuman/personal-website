@@ -1,0 +1,39 @@
+.headline {
+  font-size: 2.0rem;
+  font-weight: 300;
+
+  &--main-title:after {
+    display: block;
+    height: 2px;
+    background-color: #39e7e0;
+    content: " ";
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--margin-small {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  &--title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    margin-top: 1em;
+    margin-bottom: .4rem;
+    border-bottom: 5px solid #1cf06d;
+  }
+
+  &--description {
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-bottom: 1.2em;
+    max-width: 500px;
+  }
+}
