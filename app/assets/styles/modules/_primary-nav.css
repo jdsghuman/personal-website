@@ -11,6 +11,7 @@
   }
 
   li {
+    display: inline-block;
     list-style: none;
     float: left;
     padding-right: 25px;
@@ -25,12 +26,42 @@
     font-size: 1.3rem;
     padding: 10px 0;
     text-transform: uppercase;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
   }
 
-  a:hover {
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
+  span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.7px;
+    background: #fff;
+  }
+
+  span:before {
+    left: -2.5px;
+  }
+  span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.7s;
+  }
+
+  span:hover:before {
+    width: 100%;
+    background: #fff;
+    transition: width 0.4s;
+  }
+
+  span:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: 0s;
   }
 }

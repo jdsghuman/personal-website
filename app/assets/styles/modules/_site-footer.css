@@ -1,0 +1,10 @@
+.site-footer {
+  padding: 2rem;
+  background-color: #333333;
+  color: #bbc1c9;
+  text-align: center;
+
+  p {
+    margin-bottom: 4px;
+  }
+}

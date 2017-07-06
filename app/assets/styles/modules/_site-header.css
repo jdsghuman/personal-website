@@ -8,9 +8,8 @@
     position: absolute;
     top: 0;
     left: 50%;
-    padding-top: 10px;
     transform: translateX(-50%) scale(.9);
-    transform-origin: 50% 50%;
+    transform-origin: 50% 0%;
 
     @mixin atSmall {
       transform: translateX(-50%) scale(.6);
@@ -24,6 +23,10 @@
     @mixin atMinHeight {
       display: none;
     }
+  }
+
+  &__logo-main {
+    margin-bottom: 60px;
   }
 
   &__menu-content {

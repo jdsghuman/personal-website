@@ -1,0 +1,88 @@
+.about {
+  position: relative;
+  /*min-height: 100vh;*/
+  background-color: #F5F8FA;
+  /*background-color: yellow;*/
+  padding: 60px 10px;
+  padding-top: 80px;
+  font-family: 'Arial';
+  font-size: 3rem;
+  color: #000000;
+  line-height: 96%;
+  @mixin clearfix;
+
+  &__name {
+    width: 90%
+  }
+
+  &__title {
+
+    @mixin atSmall {
+      padding-left: 10%;
+    }
+  }
+
+  &__name-last {
+    padding-left: 40px;
+    @mixin atMedium {
+      padding-left: 70px;
+    }
+  }
+
+  &__description {
+    margin-top: 60px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    font-weight: 100;
+    width: 100%;
+    text-align: right;
+
+
+    @mixin atSmall {
+      width: 80%;
+    }
+    @mixin atMedium {
+      width: 100%;
+      margin-top: 90px;
+      border-right: 5px solid $mainBlue;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  @mixin atMedium {
+    font-size: 5rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  &__email {
+    margin-top: 60px;
+    font-size: 1.2rem;
+    font-family: Lato, sans-serif;
+  }
+
+  &__buttons {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @mixin atMedium {
+      margin-top: 90px;
+    }
+  }
+
+  &__emailcopy {
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    font-size: 1.2rem;
+    color: $mainGreen;
+
+    @mixin atMedium {
+      padding-top: 23px;
+      padding-bottom: 19px;
+    }
+  }
+}
