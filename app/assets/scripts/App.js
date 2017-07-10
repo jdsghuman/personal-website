@@ -1,17 +1,7 @@
-// Email button
-(function() {
-  var butEmail = document.querySelector('.emailme');
-  var emailLink = document.querySelector('.about__emailcopy');
+import MobileMenu from './modules/MobileMenu';
+import Email from './modules/Email';
+import Copyright from './modules/Copyright';
 
-  butEmail.addEventListener('click', function(e) {
-    e.preventDefault();
-    butEmail.parentElement.removeChild(butEmail);
-    emailLink.style.display = 'inline-block';
-  });
-})();
-
-// Dynamic Copyright Year in Footer
-(function(){
-  var dt = new Date().getFullYear();
-  document.querySelector('#copyyear').innerHTML = dt;
-})();
+var mobileMenu = new MobileMenu();
+var email = new Email();
+var copyright = new Copyright();

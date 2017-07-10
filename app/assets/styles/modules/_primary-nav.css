@@ -1,7 +1,9 @@
 .primary-nav {
 
   &--position-right {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
   }
 
   ul {
@@ -11,10 +13,13 @@
   }
 
   li {
-    display: inline-block;
+    /*display: inline-block;*/
     list-style: none;
-    float: left;
     padding-right: 25px;
+    @mixin atMedium {
+      float: left;
+      display: block;
+    }
   }
 
   a {
@@ -22,10 +27,14 @@
     color: #ffffff;
     text-decoration: none;
     display: block;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.3rem;
     padding: 10px 0;
     text-transform: uppercase;
+
+    @mixin atMedium {
+      font-weight: 100;
+    }
   }
 
   span {
@@ -34,34 +43,37 @@
     cursor: pointer;
   }
 
-  span:before, span:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    top: 50%;
-    margin-top: -0.7px;
-    background: #fff;
+  @mixin atMedium {
+    span:before, span:after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      top: 50%;
+      margin-top: -0.7px;
+      background: #fff;
+    }
+
+    span:before {
+      left: -2.5px;
+    }
+    span:after {
+      right: 2.5px;
+      background: #fff;
+      transition: width 0.7s;
+    }
+
+    span:hover:before {
+      width: 100%;
+      background: #fff;
+      transition: width 0.4s;
+    }
+
+    span:hover:after {
+      width: 100%;
+      background: transparent;
+      transition: 0s;
+    }
   }
 
-  span:before {
-    left: -2.5px;
-  }
-  span:after {
-    right: 2.5px;
-    background: #fff;
-    transition: width 0.7s;
-  }
-
-  span:hover:before {
-    width: 100%;
-    background: #fff;
-    transition: width 0.4s;
-  }
-
-  span:hover:after {
-    width: 100%;
-    background: transparent;
-    transition: 0s;
-  }
 }
