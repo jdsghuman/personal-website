@@ -8,6 +8,10 @@
   &--is-expanded {
       background-color: rgba(0, 0, 0, 0.7);
       padding-bottom: 50px;
+
+      @mixin atMedium {
+        background-color: transparent;
+      }
   }
 
   &__logo {

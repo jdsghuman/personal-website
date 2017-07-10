@@ -666,6 +666,13 @@ img {
       padding-bottom: 50px;
   }
 
+@media (min-width: 800px) {
+
+.site-header--is-expanded {
+        background-color: transparent
+  }
+  }
+
 .site-header__logo {
     position: absolute;
     top: 0;
