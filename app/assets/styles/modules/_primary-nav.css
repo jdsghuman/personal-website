@@ -31,10 +31,6 @@
     font-size: 1.3rem;
     padding: 10px 0;
     text-transform: uppercase;
-
-    @mixin atMedium {
-      font-weight: 100;
-    }
   }
 
   span {
