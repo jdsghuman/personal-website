@@ -621,6 +621,8 @@ img {
     /*display: block;*/
     padding: 5px 40px;
     margin: 20px auto;
+    color: #636363;
+    border: 1px solid #636363;
   }
 
 @media (min-width: 800px) {
@@ -631,7 +633,9 @@ img {
   }
 
 .btn__about:hover {
-      color: #0dcc56;
+      color: #39e7e0;
+      border: 1px solid #39e7e0;
+
     }
 
 .wrapper {
@@ -862,6 +866,12 @@ img {
     text-transform: uppercase;
   }
 
+@media (min-width: 800px) {
+      .primary-nav a.is-current-link {
+        color: black;
+      }
+  }
+
 .primary-nav span {
     position: relative;
     display: block;
@@ -1029,7 +1039,7 @@ img {
   background-color: #F5F8FA;
   /*background-color: yellow;*/
   padding: 60px 10px;
-  padding-top: 80px;
+  padding-top: 70px;
   font-family: 'Arial';
   font-size: 3rem;
   color: #000000;
@@ -1044,6 +1054,10 @@ img {
 
 .about__name {
     width: 90%
+  }
+
+.about__title {
+    padding-top: 5px;
   }
 
 @media (min-width: 530px) {
@@ -1095,8 +1109,8 @@ img {
 
 .about {
     font-size: 5rem;
-    padding-top: 10%;
-    padding-bottom: 10%
+    padding-top: 9%;
+    padding-bottom: 9%
 }
   }
 

@@ -25,12 +25,16 @@
     /*display: block;*/
     padding: 5px 40px;
     margin: 20px auto;
+    color: #636363;
+    border: 1px solid #636363;
 
     @mixin atMedium {
       padding: 0 80px;
     }
     &:hover {
-      color: #0dcc56;
+      color: $mainBlue;
+      border: 1px solid $mainBlue;
+
     }
   }
 }
