@@ -11354,6 +11354,7 @@ var StickyHeader = function () {
     _classCallCheck(this, StickyHeader);
 
     this.headerLinks = (0, _jquery2.default)('.primary-nav a');
+    this.contact = (0, _jquery2.default)('.contact_me');
     this.addSmoothScrolling();
   }
 
@@ -11361,6 +11362,7 @@ var StickyHeader = function () {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll();
+      this.contact.smoothScroll();
     }
   }]);
 
