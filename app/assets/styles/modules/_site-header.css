@@ -37,6 +37,18 @@
 
   &__logo-main {
     margin-bottom: 60px;
+    transition: all .8s ease-out;
+
+    @mixin atMedium {
+      transform: scale(1.5);
+      padding-top: 20px;
+      margin-bottom: 100px;
+    }
+
+    @mixin atLarge {
+      transform: scale(1.8);
+      padding-top: 25px;
+    }
   }
 
   &__menu-icon {

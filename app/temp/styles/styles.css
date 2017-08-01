@@ -538,7 +538,7 @@ img {
 @media (min-width: 800px) {
 
 .large-hero__subtitle {
-      margin-top: -40px;
+      margin-top: -20px;
       font-size: 1.5rem
   }
   }
@@ -713,6 +713,27 @@ img {
 
 .site-header__logo-main {
     margin-bottom: 60px;
+    -webkit-transition: all .8s ease-out;
+    transition: all .8s ease-out;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__logo-main {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      padding-top: 20px;
+      margin-bottom: 100px
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.site-header__logo-main {
+      -webkit-transform: scale(1.8);
+              transform: scale(1.8);
+      padding-top: 25px
+  }
   }
 
 .site-header__menu-icon {
@@ -1138,7 +1159,7 @@ img {
     display: none;
     padding-top: 30px;
     padding-bottom: 22px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #1cf06d;
   }
 
