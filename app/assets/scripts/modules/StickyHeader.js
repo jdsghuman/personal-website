@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
+// import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
@@ -7,7 +7,9 @@ class StickyHeader {
     this.headerLinks = $('.primary-nav a');
     this.contact = $('.contact_me');
     this.addSmoothScrolling();
+    // this.refreshWaypoints();
   }
+
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
     this.contact.smoothScroll();

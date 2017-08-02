@@ -1036,6 +1036,10 @@ img {
   }
   }
 
+.portfolio-item__coming-soon {
+    cursor: pointer;
+  }
+
 .generic-content-container p {
     /*font-weight: 300;*/
     line-height: 1.25;
@@ -1195,3 +1199,72 @@ img {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+
+.modal {
+  position: fixed;
+  z-index: 55;
+  background-color: rgba(255, 255, 255, 0.94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.modal--is-visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+  }
+
+.modal__inner {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+  }
+
+.modal__title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #39e7e0;
+  }
+
+@media (min-width: 530px) {
+
+.modal__title {
+      font-size: 3rem
+  }
+  }
+
+@media (min-width: 800px) {
+
+.modal__title {
+      font-size: 4rem
+  }
+  }
+
+.modal__close {
+    position: absolute;
+    z-index: 9999;
+    top: 20px;
+    right: 25px;
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #39e7e0;
+    cursor: pointer;
+  }
+
+.modal__close:hover {
+      color: #555;
+    }
