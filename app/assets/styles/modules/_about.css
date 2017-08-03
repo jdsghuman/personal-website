@@ -78,7 +78,7 @@
     padding-top: 30px;
     padding-bottom: 22px;
     font-size: 1.4rem;
-    color: $mainGreen;
+    color: #555;
 
     @mixin atMedium {
       padding-top: 23px;
