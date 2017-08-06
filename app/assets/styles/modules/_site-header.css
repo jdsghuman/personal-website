@@ -39,7 +39,7 @@
     margin-bottom: 60px;
     transition: all .8s ease-out;
 
-    @mixin atMedium {
+    @mixin atSmall {
       transform: scale(1.5);
       padding-top: 20px;
       margin-bottom: 100px;

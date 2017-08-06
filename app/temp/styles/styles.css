@@ -717,7 +717,7 @@ img {
     transition: all .8s ease-out;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .site-header__logo-main {
       -webkit-transform: scale(1.5);
