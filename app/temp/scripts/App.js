@@ -10397,6 +10397,7 @@ var MobileMenu = function () {
     this.siteHeader = (0, _jquery2.default)('.site-header');
     this.menuIcon = (0, _jquery2.default)('.site-header__menu-icon');
     this.menuContent = (0, _jquery2.default)('.site-header__menu-content');
+    this.navLinks = (0, _jquery2.default)('.site-header a');
     this.events();
   }
 
@@ -10404,6 +10405,7 @@ var MobileMenu = function () {
     key: 'events',
     value: function events() {
       this.menuIcon.click(this.toggleTheMenu.bind(this));
+      this.navLinks.click(this.closeNav.bind(this));
     }
   }, {
     key: 'toggleTheMenu',
@@ -10411,6 +10413,13 @@ var MobileMenu = function () {
       this.menuContent.toggleClass('site-header__menu-content--is-visible');
       this.siteHeader.toggleClass('site-header--is-expanded');
       this.menuIcon.toggleClass('site-header__menu-icon--close-x');
+    }
+  }, {
+    key: 'closeNav',
+    value: function closeNav() {
+      this.menuContent.removeClass('site-header__menu-content--is-visible');
+      this.siteHeader.removeClass('site-header--is-expanded');
+      this.menuIcon.removeClass('site-header__menu-icon--close-x');
     }
   }]);
 
