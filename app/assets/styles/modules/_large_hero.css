@@ -3,11 +3,18 @@
 
   &__background {
     min-height: 100vh;
+
     /*background-size: cover;*/
     /*background-position: center;*/
     /*background-attachment: fixed;*/
   }
-
+  &--color {
+    background-color: #2CBADB;
+  }
+  
+  &--fixed {
+    background-attachment: fixed;
+  }
   &__text-content {
     position: absolute;
     top: 50%;

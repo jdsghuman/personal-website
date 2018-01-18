@@ -1,35 +1,49 @@
 .btn {
   display: inline-block;
-  padding: .75rem 2rem;
+  padding: .8rem 3.3rem;
   margin-top: 40px;
   background-color: transparent;
-  color: $mainGreen;
+  color: #fff;
   text-decoration: none;
-  letter-spacing: 2.0px;
-  border-radius: 2px;
+  letter-spacing: 1.4px;
+  border-radius: 4px;
   transition: background-color 0.3s, border 0.3s, color 0.3s;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.3rem;
   vertical-align: middle;
-  border: 1px solid $mainGreen;
+  border: 1px solid #fff;
 
   &__full {
-    &:hover {
-      border: 1px solid #0dcc56;
-      /*color: #0dcc56;*/
-      /*background-color: $mainGreen;*/
+
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+    font-family: sans-serif;
+    font-weight: 300;
+
+    @mixin atMedium {
+      margin-top: 40px;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.4rem;
+      background-color: transparent;
+
+      &:hover {
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
   }
 
   &__about {
     /*display: block;*/
-    padding: 5px 40px;
-    margin: 20px auto;
-    color: #636363;
-    border: 1px solid #636363;
+    padding: 2px 50px;
+    margin: 23px auto;
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.5);
 
     @mixin atMedium {
       padding: 0 80px;
+      margin: 20px auto;
     }
     &:hover {
       color: $mainBlue;
