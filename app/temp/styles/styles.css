@@ -114,7 +114,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -1043,17 +1044,21 @@ img {
   margin-right: auto;
 }
 
-/*> img {
-    margin: 0 auto;
-    overflow: hidden;
-  }*/
+@media (min-width: 800px) {
+
+.portfolio-item {
+     margin-bottom: -80px
+}
+  }
 
 .portfolio-item__image {
-    width: 80%;
+    width: 60%;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    -webkit-box-shadow: 1px 5px 5px rgba(55, 55, 55, 0.5);
+            box-shadow: 1px 5px 5px rgba(55, 55, 55, 0.5);
   }
 
 @media (min-width: 800px) {
