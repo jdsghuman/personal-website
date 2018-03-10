@@ -16,7 +16,7 @@
   &__full {
 
     background-color: rgba(255, 255, 255, 0.2);
-    margin-top: 60px;
+    /* margin-top: 60px; */
     font-family: sans-serif;
     font-weight: 300;
 
@@ -31,6 +31,10 @@
         background-color: rgba(255, 255, 255, 0.2);
       }
     }
+
+    @mixin atMinHeight {
+      margin-bottom: 50px;
+    }
   }
 
   &__about {
@@ -40,6 +44,7 @@
     color: #000;
     border: 1px solid #000;
     background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
 
     @mixin atMedium {
       padding: 0 80px;
