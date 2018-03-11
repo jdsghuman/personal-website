@@ -4,14 +4,15 @@
   &__background {
     min-height: 100vh;
 
-    /*background-size: cover;*/
-    /*background-position: center;*/
-    /*background-attachment: fixed;*/
+    @mixin atMinHeight {
+      min-height:120vh
+    }
   }
+
   &--color {
     background-color: #2CBADB;
   }
-  
+
   &--fixed {
     background-attachment: fixed;
   }
