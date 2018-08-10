@@ -18,7 +18,7 @@
     padding-right: 25px;
     @mixin atMedium {
       float: left;
-      display: block;
+      /* display: block; */
     }
   }
 
@@ -26,13 +26,17 @@
     padding: 8px 0;
     color: #ffffff;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-weight: 300;
-    font-size: 1.3rem;
-    padding: 10px 0;
+    font-size: 2rem;
+    padding: 12px 0;
     text-transform: uppercase;
+    border-bottom: 1px solid #fff;
 
     @mixin atMedium {
+      font-size: 1.4rem;
+      background-color: transparent;
+      border-bottom: none;
       &.is-current-link {
         color: black;
       }
