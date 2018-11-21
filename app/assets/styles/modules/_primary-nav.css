@@ -18,7 +18,7 @@
     padding-right: 25px;
     @mixin atMedium {
       float: left;
-      display: block;
+      /* display: block; */
     }
   }
 

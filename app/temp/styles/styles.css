@@ -654,6 +654,7 @@ img {
     border: 1px solid #000;
     background-color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
+    cursor: pointer;
   }
 
 @media (min-width: 800px) {
@@ -921,8 +922,8 @@ img {
 @media (min-width: 800px) {
 
 .primary-nav li {
-      float: left;
-      display: block
+      float: left
+      /* display: block; */
   }
   }
 
@@ -942,7 +943,6 @@ img {
 @media (min-width: 800px) {
 
 .primary-nav a {
-
       padding: 8px 0;
       color: #ffffff;
       text-decoration: none;
@@ -953,7 +953,7 @@ img {
       text-transform: uppercase;
       border: none
   }
-      
+
       .primary-nav a.is-current-link {
         color: black;
       }
