@@ -8,7 +8,7 @@
   letter-spacing: 1.4px;
   border-radius: 4px;
   transition: background-color 0.3s, border 0.3s, color 0.3s;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.3rem;
   vertical-align: middle;
   border: 1px solid #fff;
@@ -18,7 +18,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     margin-top: 60px;
     font-family: sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 
     @mixin atMedium {
       margin-top: 40px;
@@ -34,12 +34,12 @@
   }
 
   &__about {
-    /*display: block;*/
     padding: 2px 50px;
     margin: 23px auto;
     color: #000;
     border: 1px solid #000;
     background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
 
     @mixin atMedium {
       padding: 0 80px;

@@ -23,16 +23,28 @@
   }
 
   a {
-    padding: 8px 0;
-    color: #ffffff;
+
+    display: inline-block;
+    color: #fff;
     text-decoration: none;
-    display: block;
     font-weight: 300;
-    font-size: 1.3rem;
-    padding: 10px 0;
-    text-transform: uppercase;
+    padding: 12px 12px;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    animation: borderWhite 1s ease-in 1;
 
     @mixin atMedium {
+
+      padding: 8px 0;
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      font-weight: 300;
+      font-size: 1.3rem;
+      padding: 10px 0;
+      text-transform: uppercase;
+      border: none;
+      
       &.is-current-link {
         color: black;
       }

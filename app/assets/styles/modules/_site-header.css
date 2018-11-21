@@ -2,12 +2,14 @@
   position: absolute;
   padding: 10px 0;
   width: 100%;
+  height: 0;
   z-index: 4;
-  transition: background-color .3s ease-out;
+  transition: all .3s ease-out;
 
   &--is-expanded {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding-bottom: 50px;
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 100%;
+      /* padding-bottom: 50px; */
 
       @mixin atMedium {
         background-color: transparent;
@@ -55,7 +57,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 12px;
+    top: 14px;
     right: 15px;
     z-index: 50;
 
